@@ -20,7 +20,7 @@ def polygon_api(ticker, start_day_days):
     start = end - timedelta(days=start_day_days)
 
     # Key is stored in a variable and the url is made into an f string to make it modular for other inputs
-    api = 'QKNWUEbzmzgOs4AtUbgMfGOr0SF1xqT4'
+    api = ''
     api_url = f'https://api.polygon.io/v2/aggs/ticker/{ticker}/range/1/day/{start}/{end}?apiKey={api}'
 
     # print(api_url)
